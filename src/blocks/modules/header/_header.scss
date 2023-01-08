@@ -1,0 +1,67 @@
+.header {
+	position: relative;
+	width: 100%;
+	min-height: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 35px;
+	@include max(xl) {
+		min-height: vw(35);
+		margin-top: vw(35);
+	}
+	&__logo {
+		position: relative;
+		width: 100%;
+		max-width: 245px;
+		height: 50px;
+		@include max(xl) {
+			width: vw(245);
+			height: vw(50);		
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: left top;
+		}
+	}
+	&__menu {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		max-width: 763px;
+		@include max(xl) {
+			width: vw(763);
+		}
+
+		&--item {
+			position: relative;
+			padding: 16px 28px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 25px;
+			transition: all .3s ease;
+			border-radius: 50px;
+			background: transparent;
+			@include max(xl) {
+				padding: vw(16) vw(28);
+				font-size: vw(20);
+				line-height: vw(25);
+			}
+			&:hover {
+				transition: all .5s ease;
+				color: #fff;
+				background:  #106FB8;
+			}
+		}
+	}
+}

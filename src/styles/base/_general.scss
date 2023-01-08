@@ -1,0 +1,79 @@
+body {
+  font-family: $mainFont;
+  color: $textMainColor;
+	width: 100%;
+	font-size: 18px;
+	@include max(xl) {
+		font-size: vw(18);
+	}
+
+	&.overflow{
+		overflow: auto;
+	}
+}
+// @include max(xl) {
+// 	max-width: vw();
+// 	height: vw();
+// 	padding: vw() vw();
+// 	border-radius: vw();
+// 	font-size: vw();
+// 	line-height: vw();
+// 	margin-bottom: vw();
+// 	margin-top: vw();
+// 	margin-right: vw();
+// 	margin-left: vw();
+// }	
+.container {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: column nowrap;
+	width: 100%;
+	max-width: 1200px;
+	@include max(xl) {
+		max-width: vw(1200);
+	}
+}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	background-color: #EF6516;
+	box-shadow: 0px 20px 30px 0px rgba(255, 255, 255, 0.3) inset;
+	padding: 16px 0px;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 50px;
+	width: 100%;
+	max-width: 285px;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: background-color .1s ease;
+	@include max(xl) {
+		padding: vw(16) vw(37);
+		font-size: vw(20);
+		max-width: vw(285);
+	}
+	cursor: pointer;
+	&:focus, &:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+	&:hover {
+		background-color: lighten(#EF6516, 5%);
+		&::after {
+			opacity: .22;
+		}
+	}
+	&:active {
+		background-color: darken(#EF6516, 5%);
+		&::after {
+			opacity: .32
+		}
+	}
+}

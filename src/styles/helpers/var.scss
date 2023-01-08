@@ -1,0 +1,26 @@
+/* media */
+$media-list: (
+  "xxs": 375,
+  "xs": 560,
+  "sm": 767,
+  "md": 1079,
+  "lg": 1279,
+  "xl": 1440,
+  "xxl": 1919,
+);
+
+/* шрифты */
+$mainFont: "Gilroy",  sans-serif;
+// $secondFont: "Saira Condensed", "Arial", sans-serif;
+
+/* цвета */
+$white: #ffffff;
+$blue: #106FB8;
+$blueDark:  linear-gradient(270deg, #0D659F 20.08%, #106FB8 74.8%);
+$smoky: #f6f6f6;
+$orange: #ff9900;
+$orange--light: #fcb852;
+
+$textMainColor: $blue;
+
+$transition: 0.3s ease;

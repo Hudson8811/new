@@ -1,0 +1,109 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Main Page";
+
+block content
+	.main
+		.container
+			include ../../blocks/modules/header/header
+			.lottery
+				.lottery__desc 
+					.lottery__desc--title
+						img(src="img/main-page/title__4.png", alt="icon")
+					//- .lottery__desc--title
+					//- 	img(src="img/svg/title__2.svg", alt="icon")
+					.lottery__desc--text 
+						!="У каждой мамы свой вайб: кто-то готовит для большой семьи, кто-то заботится о новорождённом, а кто-то устал сидеть с малышом на больничном. <br><br>Для вас — наш новый конкурс!"
+					.lottery__desc__rules
+						.lottery__desc__rules--item
+							.lottery__desc__rules--item__number 1
+							.lottery__desc__rules--item__content
+								!= "Листайте вайбы и получайте <br> полезные советы"
+						.lottery__desc__rules--item
+							.lottery__desc__rules--item__number 2
+							.lottery__desc__rules--item__content
+								!= "Выигрывайте призы <br><span>КАЖДУЮ НЕДЕЛЮ!</span>"
+					button.button.lottery__button Принять участие
+				.lottery__image
+					img(src="img/main-page/lottery__image__3.png", alt="")
+			.prizes
+				.prize.prize--big 
+					img(src="img/main-page/prize__picture__1.png", alt="icon")
+					.prize__name 
+						!="Электронный подарочный<br>сертификат на OZON на 700 руб."
+					.prize__date Еженедельно разыгрываем по 20 шт.!
+				.prize
+					img(src="img/main-page/prize__picture__2.png", alt="icon")
+					.prize__name
+						!="Беспроводные <br>наушники Apple<br>AirPods Pro 2021" 
+				.prize
+					img(src="img/main-page/prize__picture__3.png", alt="icon")
+					.prize__name
+						!="Смартфон <br>Apple iPhone 14 <br>128 ГБ" 
+				.prize
+					img(src="img/main-page/prize__picture__4.png", alt="icon")
+					.prize__name
+						!="Массажёр <br> для шеи <br>BORK D602" 
+				.prize
+					img(src="img/main-page/prize__picture__5-3.png", alt="icon")
+					.prize__name
+						!="Умный увлажнитель<br>воздуха Smartmi <br>Humidifier Rainforest" 
+				.prize
+					img(src="img/main-page/prize__picture__6-3.png", alt="icon")
+					.prize__name
+						!="Беспроводной<br>пылесос Mi <br>Handheld Vacuum <br>Cleaner G10" 
+			.prizes__button 
+				img(src="img/svg/prizes__button.svg", alt="")
+			.virus
+				.virus__annotation
+					.virus__annotation--title Бережная забота о здоровье в вирусный сезон
+					.virus__annotation--underTitle Лечение и профилактика вирусных инфекций
+					.virus__annotation--text Адаптация после каникул к саду или школе, частые ОРВИ у малыша, важные соревнования, которые никак нельзя пропустить, — на всех этапах жизни ребенка ему нужна бережная защита от вирусов. Препараты Виферон® созданы с учетом особенностей детского организма и уже более 25 лет помогают мамам и малышам в лечении и профилактике вирусных инфекций.
+					.virus__annotation__item 
+						img(src="img/svg/virus__annotation__item__1.svg", alt="icon")
+						.virus__annotation__item--text 
+							!="<b>блокировать вирус</b> и <b>восстанавливать иммунитет</b>"
+					.virus__annotation__item 
+						img(src="img/svg/virus__annotation__item__2.svg", alt="icon")
+						.virus__annotation__item--text 
+							!="Помогает <b>Снижает вероятность осложнений </b> и последующих заболеваний <span>1</span>"
+					.virus__annotation__item 
+						img(src="img/svg/virus__annotation__item__3.svg", alt="icon")
+						.virus__annotation__item--text 
+							!="<b>Действует бережно:</b>"
+							ul 
+								li 
+									!="Разрешен беременным женщинам и детям с первых дней жизни <span>2</span>"
+								li Не содержит растительных аллергенов, красителей и подсластителей
+								li Не перегружает ЖКТ
+					.virus__annotation__item 
+						img(src="img/svg/virus__annotation__item__4.svg", alt="icon")
+						.virus__annotation__item--text 
+							!="Препарат Виферон® удостоен специального приза всероссийской медицинской премии «Russian Pharma Awards» в номинации «Доверие профессионалов в защите здоровья матери и ребенка от вирусных инфекций.» <span>3</span>"
+					.button.virus__button Начать путь к призам!
+					.virus__annotation--rules
+						ol 
+							li
+								!="Нестерова В.И. «Препараты интерферона альфа в клинической практике: когда и как», Лечащий врач №9, 2017.<br>"
+							li
+								!=" Инструкция по медицинскому применению препарата Виферон® Свечи<br>"
+							li
+								!="Премия Russian Pharma Awards, 2022. Инструкция по медицинскому применению Р N001142/02, P N001142/01 и P N000017/01"
+							li
+								!="Виферон® Свечи/ Мазь – лечение ОРВИ и гриппа, Виферон® Гель — профилактика и лечение ОРВИ и гриппа"
+				.virus__drug
+					.virus__drug__item
+						img(src="img/main-page/virus__drug__item__1.png", alt="")
+						.virus__drug__text Виферон® Свечи
+					.virus__drug__item
+						img(src="img/main-page/virus__drug__item__2.png", alt="")
+						.virus__drug__text Виферон® Гель
+					.virus__drug__item
+						img(src="img/main-page/virus__drug__item__3.png", alt="")
+						.virus__drug__text Виферон® Мазь 4
+		.application
+			.application--text ПЕРЕД ПРИМЕНЕНИЕМ ОЗНАКОМЬТЕСЬ С ИНСТРУКЦИЕЙ. О ВОЗМОЖНЫХ ПРОТИВОПОКАЗАНИЯХ ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ		
+block scripts
+	//- script(src="js/vendor.js")
+	script(src="js/main.js")
